@@ -1,0 +1,9 @@
+D:\CODE\RemoteController\RemoteController\bin\Debug\RemoteController.exe.config
+D:\CODE\RemoteController\RemoteController\bin\Debug\RemoteController.exe
+D:\CODE\RemoteController\RemoteController\bin\Debug\RemoteController.pdb
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.csproj.AssemblyReference.cache
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.Properties.Resources.resources
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.csproj.GenerateResource.cache
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.csproj.CoreCompileInputs.cache
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.exe
+D:\CODE\RemoteController\RemoteController\obj\Debug\RemoteController.pdb
