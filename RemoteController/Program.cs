@@ -26,9 +26,6 @@ namespace RemoteController
         [STAThread]
         static void Main()
         {
-           
-
-
             // Создаем локальную конечную точку
             IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, port);
             // Создаем основной сокет
@@ -55,6 +52,7 @@ namespace RemoteController
                                 // Преобразуем полученный набор байт в строку
                                 String msg = Encoding.UTF8.GetString(recBytes, 0, nBytes);
                                 MessageBox.Show(msg, "Привет Пупсик!");
+                                Cursor.Position = new System.Drawing.Point(0, 0);
                             }
                             break;
                         case codePoff: // Выключаем
