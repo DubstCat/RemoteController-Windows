@@ -19,6 +19,8 @@ namespace RemoteController
         const byte codeRotate = 2;
         // Выключить компьютер
         const byte codePoff = 3;
+        // Передвинуть курсор
+        const byte codeMove = 4;
 
         /// <summary>
         /// Главная точка входа для приложения.
@@ -53,6 +55,20 @@ namespace RemoteController
                                 String msg = Encoding.UTF8.GetString(recBytes, 0, nBytes);
                                 MessageBox.Show(msg, "Привет Пупсик!");
                                 Cursor.Position = new System.Drawing.Point(0, 0);
+                            }
+                            break;
+                        case codeMove:   // Сообщение                         
+                            nBytes = handler.Receive(recBytes); // Читаем данные сообщения
+                            if (nBytes != 0)
+                            {
+                                // Преобразуем полученный набор байт в строку
+                                String msg = Encoding.UTF8.GetString(recBytes, 0, nBytes);
+                                // Преобразуем строку с координатами курсора
+                                string[] pos = msg.Split(' ');
+                                int MouseX = Int32.Parse(pos[0]);
+                                int MouseY = Int32.Parse(pos[1]);
+                                MessageBox.Show("lf", "Привет Пупсик!");
+                                Cursor.Position = new System.Drawing.Point(MouseX, MouseY);
                             }
                             break;
                         case codePoff: // Выключаем
